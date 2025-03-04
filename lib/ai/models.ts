@@ -9,6 +9,12 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
+    id: 'gemini-2.0-flash',
+    label: 'Gemini 2.0 Flash',
+    apiIdentifier: 'gemini-2.0-flash',
+    description: 'For complex, multi-step tasks',
+  },
+  {
     id: 'gpt-4o',
     label: 'GPT 4o',
     apiIdentifier: 'gpt-4o',
