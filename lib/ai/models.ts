@@ -9,11 +9,32 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
-    id: 'gemini-2.0-flash',
-    label: 'Gemini 2.0 Flash',
-    apiIdentifier: 'gemini-2.0-flash',
+    id: 'gpt-4o',
+    label: 'GPT 4o',
+    apiIdentifier: 'gpt-4o',
     description: 'For complex, multi-step tasks',
   },
+  {
+    id: 'gpt-4o-mini',
+    label: 'GPT 4o Mini',
+    apiIdentifier: 'gpt-4o-mini',
+    description: 'Affordable for complex, multi-step tasks',
+  },
+  {
+    id: 'o3-mini',
+    label: 'OpenAI o3-Mini',
+    apiIdentifier: 'openai/o3-mini',
+    description: 'Cost Effective & Fast Reasoning Model',
+  },
+  {
+    id: 'gemini-2-flash',
+    label: 'Gemini 2.0 Flash',
+    apiIdentifier: 'google/gemini-2.0-flash-001',
+    description: 'Fast and powerful reasoning model with multimodal capabilities',
+  }
+] as const;
+
+export const reasoningModels: Array<Model> = [
   {
     id: 'gpt-4o',
     label: 'GPT 4o',
@@ -25,29 +46,20 @@ export const models: Array<Model> = [
     label: 'GPT 4o Mini',
     apiIdentifier: 'gpt-4o-mini',
     description: 'Affordable for complex, multi-step tasks',
-  }
-] as const;
-
-export const reasoningModels: Array<Model> = [
-  {
-    id: 'o1',
-    label: 'o1',
-    apiIdentifier: 'o1',
-    description: 'For deep reasoning and complex, multi-step tasks',
-  },
-  {
-    id: 'o1-mini',
-    label: 'o1-mini',
-    apiIdentifier: 'o1-mini',
-    description: 'For deep reasoning and complex, multi-step tasks, cheaper.',
   },
   {
     id: 'o3-mini',
-    label: 'o3-mini',
-    apiIdentifier: 'o3-mini',
-    description: 'For deep reasoning and complex, multi-step tasks, cheaper.',
+    label: 'OpenAI o3-Mini',
+    apiIdentifier: 'openai/o3-mini',
+    description: 'Cost Effective & Fast Reasoning Model',
+  },
+  {
+    id: 'gemini-2-flash',
+    label: 'Gemini 2.0 Flash',
+    apiIdentifier: 'google/gemini-2.0-flash-001',
+    description: 'Fast and powerful reasoning model with multimodal capabilities',
   }
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'gpt-4o';
+export const DEFAULT_MODEL_NAME: string = 'gemini-2-flash';
 export const DEFAULT_REASONING_MODEL_NAME: string = 'o1';
